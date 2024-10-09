@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5ampere2motors - Consigli e Tutorial</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Collegamento al file CSS esterno -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Icona per aprire/chiudere la sidebar -->
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+        <img src="https://i.ibb.co/qRnz3KN/logo52-removebg-preview.png" alt="5ampere2motors Logo">
+    </header>
+
+    <!-- Sidebar Menu -->
+<aside id="sidebar" class="sidebar">
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="chi-siamo.html"><i class="fas fa-users"></i> Chi siamo</a>
+        <a href="i-nostri-articoli.html"><i class="fas fa-book"></i> I nostri articoli</a>
+        <a href="https://allmylinks.com/5ampere2motors" target="_blank"><i class="fas fa-share-alt"></i> I nostri social</a> <!-- Link aggiornato -->
+    </nav>
+</aside>
+
+
+    <!-- Main Content -->
+    <main>
+        <section class="latest-article">
+            <h2>Il nostro ultimo articolo</h2>
+            <p><a href="articolo1.html">Arduino: Una Famiglia in Continua Evoluzione</a></p>
+        </section>
+
+        <section class="newsletter-section">
+            <h2>Iscriviti alla nostra newsletter</h2>
+            <p>Non perderti i prossimi articoli! Rimani aggiornato con noi.</p>
+            <button onclick="window.location.href='http://localhost/7058/'">Iscriviti</button>
+        </section>
+
+        <section class="video-section">
+            <h2>Guarda il nostro video più recente</h2>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video"></iframe>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>2024 5ampere2motors. Tutti i diritti riservati.</p>
+        <a href="https://github.com/5AMPERE2MOTORS"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.youtube.com/@successo-po5vr"><i class="fab fa-youtube"></i> YouTube</a>
+    </footer>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('open')) {
+                sidebar.style.left = '-250px';
+                sidebar.classList.remove('open');
+            } else {
+                sidebar.style.left = '0';
+                sidebar.classList.add('open');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino: Una Famiglia in Continua Evoluzione</title>
+
+    <!-- Collegamento alle icone e font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css"> <!-- Collegamento al CSS esterno -->
+</head>
+
+<body>
+    <header>
+        <!-- Icona per aprire/chiudere la sidebar -->
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+        <img src="https://i.ibb.co/qRnz3KN/logo52-removebg-preview.png" alt="5ampere2motors Logo">
+    </header>
+
+<!-- Sidebar Menu -->
+<aside id="sidebar" class="sidebar">
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="chi-siamo.html"><i class="fas fa-users"></i> Chi siamo</a>
+        <a href="i-nostri-articoli.html"><i class="fas fa-book"></i> I nostri articoli</a>
+        <a href="https://allmylinks.com/5ampere2motors" target="_blank"><i class="fas fa-share-alt"></i> I nostri social</a> <!-- Link aggiornato -->
+    </nav>
+</aside>
+
+
+    <!-- Contenuto principale -->
+    <main>
+        <div class="content"> <!-- Box per il contenuto dell'articolo -->
+            <h1>Arduino: Una Famiglia in Continua Evoluzione</h1>
+            <h2>Arduino Giga R1 e Arduino Uno R1: la famiglia di Arduino si aggiorna</h2>
+            <p>
+                L'Arduino Giga R1 rappresenta un salto evolutivo significativo nella famiglia Arduino, offrendo prestazioni e funzionalità molto superiori rispetto al classico Arduino Uno R1. Vediamo nel dettaglio le caratteristiche che distinguono queste due schede:
+            </p>
+
+            <h3>Arduino Giga R1: La Potenza del Dual-Core</h3>
+            <p>
+                <strong>Microcontrollore</strong>: Il cuore del Giga R1 è un potente microcontrollore STM32H747 dual-core, con un Cortex-M7 a 480 MHz e un Cortex-M4 a 240 MHz. Questa configurazione permette di eseguire due sketch Arduino contemporaneamente o di gestire compiti complessi in modo più efficiente.<br>
+                <strong>Memoria</strong>: Dispone di una quantità di memoria RAM e flash notevolmente superiore rispetto all'Uno R1, consentendo di eseguire programmi più grandi e complessi.<br>
+                <strong>Connettività</strong>: Oltre alle porte seriali standard, il Giga R1 offre una vasta gamma di opzioni di connettività, tra cui Wi-Fi, Bluetooth e un jack audio da 3.5 mm.<br>
+                <strong>Periferiche integrate</strong>: La scheda è dotata di un'ampia varietà di periferiche integrate, come ADC a alta risoluzione, DAC, timer e PWM, che la rendono adatta a un'ampia gamma di applicazioni.
+            </p>
+            <img src="https://store.arduino.cc/cdn/shop/files/ABX00063_00.default_804x603.jpg?v=1727101223" alt="Arduino Giga R1">
+
+            <h3>Arduino Uno R1: Il Classico Affidabile</h3>
+            <p>
+                <strong>Microcontrollore</strong>: L'Uno R1 è basato sul microcontrollore ATmega328P, un processore a 8 bit ben collaudato e ampiamente utilizzato nel mondo Arduino.<br>
+                <strong>Memoria</strong>: Offre una quantità di memoria limitata rispetto al Giga R1, ma sufficiente per molti progetti di base.<br>
+                <strong>Connettività</strong>: Dispone delle porte seriali standard e di un numero limitato di pin digitali e analogici.<br>
+                <strong>Semplicità</strong>: L'Uno R1 è una scheda semplice e intuitiva, ideale per i principianti e per progetti di piccole dimensioni.
+            </p>
+            <img src="https://store.arduino.cc/cdn/shop/files/ABX00087_00.front_804x603.jpg?v=1727101606" alt="Arduino Uno R1">
+
+            <h3>Confronto tra Arduino Giga R1 e Arduino Uno R1</h3>
+            <table>
+                <tr>
+                    <th>Caratteristica</th>
+                    <th>Arduino Giga R1</th>
+                    <th>Arduino Uno R1</th>
+                </tr>
+                <tr>
+                    <td>Microcontrollore</td>
+                    <td>STM32H747 dual-core</td>
+                    <td>ATmega328P</td>
+                </tr>
+                <tr>
+                    <td>Frequenza del clock</td>
+                    <td>480 MHz / 240 MHz</td>
+                    <td>16 MHz</td>
+                </tr>
+                <tr>
+                    <td>Memoria Flash</td>
+                    <td>Molto elevata</td>
+                    <td>Limitata</td>
+                </tr>
+                <tr>
+                    <td>Memoria RAM</td>
+                    <td>Elevata</td>
+                    <td>Limitata</td>
+                </tr>
+                <tr>
+                    <td>Connettività</td>
+                    <td>Wi-Fi, Bluetooth, Jack audio, Seriali</td>
+                    <td>Seriali</td>
+                </tr>
+                <tr>
+                    <td>Periferiche integrate</td>
+                    <td>Molte (ADC ad alta risoluzione, DAC, timer, PWM)</td>
+                    <td>Limitate</td>
+                </tr>
+                <tr>
+                    <td>Compattezza</td>
+                    <td>Meno compatta</td>
+                    <td>Molto compatta</td>
+                </tr>
+                <tr>
+                    <td>Prezzo</td>
+                    <td>Più elevato (84€)</td>
+                    <td>Più economico (22€ o 34€)</td>
+                </tr>
+            </table>
+
+            <h2>Quindi quale scheda comprare?</h2>
+            <p>
+                <strong>Arduino Giga R1</strong>: È la scelta ideale per progetti complessi che richiedono elevate prestazioni, multitasking, connettività avanzata e una vasta gamma di periferiche. È perfetto per applicazioni industriali, robotica avanzata, IoT e progetti che richiedono un alto livello di integrazione.<br>
+                <strong>Arduino Uno R1</strong>: È la scelta perfetta per i principianti, per progetti di piccole dimensioni e per prototipi rapidi. È una scheda affidabile, economica e facile da usare.
+            </p>
+
+            <div class="conclusion">
+                Conclusione: Entrambe le schede Arduino Giga R1 e Arduino Uno R1 hanno il loro ruolo nel mondo della prototipazione elettronica. La scelta tra le due dipende dalle specifiche esigenze del tuo progetto. Se hai bisogno di potenza, flessibilità e funzionalità avanzate, il Giga R1 è la scelta ovvia. Se invece cerchi una scheda semplice, economica e affidabile per iniziare, l'Uno R1 è la soluzione ideale.
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>2024 5ampere2motors. Tutti i diritti riservati.</p>
+        <a href="https://github.com/5AMPERE2MOTORS"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.youtube.com/@successo-po5vr"><i class="fab fa-youtube"></i> YouTube</a>
+    </footer>
+
+    <script>
+        // Funzione per aprire e chiudere la sidebar
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('open')) {
+                sidebar.style.left = '-250px'; // Chiudi la sidebar
+                sidebar.classList.remove('open');
+            } else {
+                sidebar.style.left = '0'; // Apri la sidebar
+                sidebar.classList.add('open');
+            }
+        }
+    </script>
+</body>
+
+</html>

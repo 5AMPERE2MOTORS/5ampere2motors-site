@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi siamo - 5ampere2motors</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Collegamento al file CSS -->
+</head>
+
+<body>
+
+    <header>
+        <!-- Icona per aprire/chiudere la sidebar -->
+        <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+        <img src="https://i.ibb.co/qRnz3KN/logo52-removebg-preview.png" alt="5ampere2motors Logo">
+    </header>
+<!-- Sidebar Menu -->
+<aside id="sidebar" class="sidebar">
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="chi-siamo.html"><i class="fas fa-users"></i> Chi siamo</a>
+        <a href="i-nostri-articoli.html"><i class="fas fa-book"></i> I nostri articoli</a>
+        <a href="https://allmylinks.com/5ampere2motors" target="_blank"><i class="fas fa-share-alt"></i> I nostri social</a> <!-- Link aggiornato -->
+    </nav>
+</aside>
+
+
+    <!-- Contenuto principale -->
+    <div class="content">
+        <h2>Chi siamo</h2>
+        <p>Caro lettore siamo fieri che sei nel nostro sito, noi siamo un gruppo di 3 persone (Achille, Mattia e Luca) abbiamo creato questo sito per un progetto scolastico di informatica.</p>
+        <p>In questo sito la nostra missione è rendere l'apprendimento della tecnologia accessibile a tutti, con un focus particolare sulla robotica e sull'automazione. Ogni articolo è scritto con cura, basato su esperienza pratica e pensato per essere utile sia ai principianti che agli esperti.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>2024 5ampere2motors. Tutti i diritti riservati.</p>
+        <a href="https://github.com/5AMPERE2MOTORS"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.youtube.com/@successo-po5vr"><i class="fab fa-youtube"></i> YouTube</a>
+    </footer>
+
+    <script>
+        // Funzione per aprire e chiudere la sidebar
+        function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.classList.contains('open')) {
+                sidebar.style.left = '-250px'; // Chiudi la sidebar
+                sidebar.classList.remove('open');
+            } else {
+                sidebar.style.left = '0'; // Apri la sidebar
+                sidebar.classList.add('open');
+            }
+        }
+    </script>
+
+</body>
+</html>
